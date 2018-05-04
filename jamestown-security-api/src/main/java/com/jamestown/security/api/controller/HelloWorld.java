@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
 
     @GetMapping
-    public String helloWorld () {
-        return "Hello World";
+    public String helloWorld() {
+        return "Api Security is works";
     }
 
 }

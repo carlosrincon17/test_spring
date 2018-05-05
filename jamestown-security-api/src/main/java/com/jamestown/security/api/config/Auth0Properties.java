@@ -2,14 +2,18 @@ package com.jamestown.security.api.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
 
 @ConfigurationProperties(prefix = "auth0")
+@Component
 @PropertySource("classpath:application.properties")
 public class Auth0Properties {
 
     private String clientSecret;
     private String domain;
     private String clientId;
+    private String audience;
+    private String scope;
 
     public String getClientSecret() {
         return clientSecret;
@@ -33,5 +37,21 @@ public class Auth0Properties {
 
     public void setClientId(String clientId) {
         this.clientId = clientId;
+    }
+
+    public String getAudience() {
+        return audience;
+    }
+
+    public void setAudience(String audience) {
+        this.audience = audience;
+    }
+
+    public String getScope() {
+        return scope;
+    }
+
+    public void setScope(String scope) {
+        this.scope = scope;
     }
 }

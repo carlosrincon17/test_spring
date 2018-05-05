@@ -43,25 +43,6 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>jamestown-repo</id>
-            <name>myMavenRepoJamestown</name>
-            <url>http://mymavenrepo.com/repo/1U2H7SST3ESopYBQw7pl/</url>
-        </repository>
-    </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>myMavenRepoJamestown</id>
-            <url>${myMavenRepoJamestownReadUrl}</url>
-        </repository>
-        <snapshotRepository>
-            <id>myMavenRepoJamestown</id>
-            <url>${myMavenRepoJamestownWriteUrl}</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <build>
         <plugins>
             <plugin>
